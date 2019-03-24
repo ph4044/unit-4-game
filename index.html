@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Crystals Collector Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" id="title-block">
+                <h1>CrystalsCollector!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" id="section-instructions">  <!-- Instructions for the game. -->
+                <p>
+                    You will be given a random number at the start of the game.</p>
+                <p>
+                    There are four crystals below. By clicking on a crystal you will
+                    add a specific amount of points to your total score.
+                </p>
+
+                <p>
+                    You win the game by matching your total score to random number.
+                    You lose the game if your total score goes above the random
+                    number.
+                </p>
+
+                <p>
+                    The value of each crystal is hidden from you until you click on it.
+                </p>
+
+                <p>
+                    Each time when the game starts, the game will change the values of
+                    each crystal.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3" id="section-random-number"></div>   <!-- Display the target number -->
+
+            <div class="col-md-2" id="section-scoreboard">   <!-- Display result of last game, wins and losses. -->
+                <h2> <span id="announcement"></span></h2>
+                <h2>Wins: <span id="number-of-wins"></span></h2>
+                <h2>Losses: <span id="number-of-losses"></span></h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6" id="section-buttons" px-0>   <!-- Display the crystal images that user can click on. -->
+                    <img src="assets/images/crystal1.PNG" id="crystalOne" class="crystal-image">
+                    <img src="assets/images/crystal2.PNG" id="crystalTwo" class="crystal-image">
+                    <img src="assets/images/crystal3.PNG" id="crystalThree" class="crystal-image">
+                    <img src="assets/images/crystal4.PNG" id="crystalFour" class="crystal-image">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3" id="section-header">   <!-- Header for the user total score, displayed below. -->
+                <h2>Your total score is: </h2>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3" id="section-total-score"></div>   <!-- Display the user's total score. -->
+        </div>
+
+        <!-- Link to the jQuery library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Link to to JavaScript file -->
+        <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
